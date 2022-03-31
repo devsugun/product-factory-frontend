@@ -5,6 +5,7 @@ import {useMutation} from '@apollo/react-hooks';
 import {useRouter} from 'next/router';
 import {CREATE_PRODUCT_REQUEST, DELETE_PRODUCT, UPDATE_PRODUCT} from '../../graphql/mutations';
 import Loading from "../../components/Loading";
+import FileUpload from '../../components/FileUpload';
 import RichTextEditor from "../../components/RichTextEditor";
 import {getProp} from "../../utilities/filters";
 import {Upload} from 'antd';

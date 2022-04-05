@@ -8,7 +8,7 @@ import { PlaySquareOutlined } from "@ant-design/icons";
 import Priorities from "../Priorities";
 import ReactPlayer from "react-player";
 import { getUserRole, hasManagerRoots } from "../../utilities/utils";
-import "./Dragndrop";
+import "./Dragndrop/index.tsx";
 
 type Props = {
   tasks: any;

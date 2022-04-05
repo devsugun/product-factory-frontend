@@ -9,6 +9,7 @@ import {CREATE_BUG, UPDATE_BUG} from '../../graphql/mutations';
 import {RICH_TEXT_EDITOR_WIDTH} from '../../utilities/constants';
 import {getProp} from "../../utilities/filters";
 import RichTextEditor from "../RichTextEditor";
+import Dragndrop from "../Dragndrop";
 
 const {Option} = Select;
 
@@ -16,6 +17,7 @@ type Props = {
   modal?: boolean,
   productSlug?: string,
   closeModal: any,
+  Dragndrop: any,
   currentProduct?: any,
   modalType?: boolean,
   submit?: any;
@@ -41,6 +43,7 @@ const AddEditBug: React.FunctionComponent<Props> = (
     editMode = false,
     bug,
     submit,
+    Dragndrop,
   }
 ) => {
   const [headline, setHeadline] = useState(editMode ? bug.headline : '');
@@ -243,6 +246,7 @@ const AddEditBug: React.FunctionComponent<Props> = (
         <Row className='mb-15'>
           <label>Please describe the bug *:</label>
           <RichTextEditor initialHTMLValue={description} onChangeHTML={setDescription} clear={descriptionClear}/>
+          <Dragndrop /> 
         </Row>
         <Row className='mb-15'>
           <label>Product *:</label>

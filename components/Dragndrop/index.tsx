@@ -32,7 +32,7 @@ ReactDOM.render(
     <p className="ant-upload-drag-icon">
       ....
     </p>
-    <p className="ant-upload-text">...</p>
+    <p className="ant-upload-text">You can add any file format, pdf, psd, png, jpeg etc..</p>
   </Dragger>,
   document.getElementById('container'),
 );

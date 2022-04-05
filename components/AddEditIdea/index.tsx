@@ -9,6 +9,7 @@ import {CREATE_IDEA, UPDATE_IDEA} from '../../graphql/mutations';
 import {RICH_TEXT_EDITOR_WIDTH} from '../../utilities/constants';
 import {getProp} from "../../utilities/filters";
 import RichTextEditor from "../RichTextEditor";
+import "./Dragndrop";
 // import {IDEA_TYPES} from "../../graphql/types";
 
 const {Option} = Select;

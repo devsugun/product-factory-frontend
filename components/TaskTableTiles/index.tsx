@@ -8,7 +8,6 @@ import { PlaySquareOutlined } from "@ant-design/icons";
 import Priorities from "../Priorities";
 import ReactPlayer from "react-player";
 import { getUserRole, hasManagerRoots } from "../../utilities/utils";
-import "./Dragndrop/index.tsx";
 
 type Props = {
   tasks: any;
@@ -246,7 +245,6 @@ const TaskTableTiles: React.FunctionComponent<Props> = ({
                        height="300px"
                        width="100%" />
         )}
-        <Dragndrop />
       </Modal>
     </>
   );

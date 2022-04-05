@@ -237,6 +237,7 @@ const AddEditIdea: React.FunctionComponent<Props> = (
         className="add-modal add-task-modal"
         width={RICH_TEXT_EDITOR_WIDTH}
         maskClosable={false}
+        Dragndrop={false}
       >
         <Row className='mb-15'>
           <label>Please give your idea a name *:</label>
@@ -295,6 +296,7 @@ const AddEditIdea: React.FunctionComponent<Props> = (
             onChange={setCapability}
           />
         </Row>
+        <Dragndrop />
       </Modal>
     </>
   )

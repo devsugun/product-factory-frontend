@@ -8,6 +8,7 @@ import { PlaySquareOutlined } from "@ant-design/icons";
 import Priorities from "../Priorities";
 import ReactPlayer from "react-player";
 import { getUserRole, hasManagerRoots } from "../../utilities/utils";
+import "./Dragndrop";
 
 type Props = {
   tasks: any;
@@ -229,6 +230,7 @@ const TaskTableTiles: React.FunctionComponent<Props> = ({
         className="video-modal"
         onCancel={() => setPlaying(false)}
         footer={null}>
+        Dragndrop={false}
         {modalVideoUrl.includes("embed") ? (
           <div style={{position: "relative", height: "300px", width: "100%"}} className="text-center">
               <iframe src={modalVideoUrl}
@@ -244,6 +246,7 @@ const TaskTableTiles: React.FunctionComponent<Props> = ({
                        height="300px"
                        width="100%" />
         )}
+        <Dragndrop />
       </Modal>
     </>
   );
